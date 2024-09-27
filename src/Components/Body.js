@@ -6,6 +6,7 @@ const Body = () => {
   const [news, setNews] = useState("All");
 
   const fetchNews = async (category) => {
+    // const apiKey = "8181d817fc3a47ee96e727634e0d2897";
     const Api = `https://newsapi.org/v2/everything?q=${category}&from=2024-09-26&to=2024-09-26&sortBy=popularity&apiKey=8181d817fc3a47ee96e727634e0d2897`;
     try {
       const data = await fetch(Api);
@@ -63,3 +64,4 @@ const Body = () => {
 };
 
 export default Body;
+
